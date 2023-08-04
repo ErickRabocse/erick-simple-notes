@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400;600&display=swap");
+
+:root {
+  --green: #255957;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+  background-color: var(--green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* * * * * * CONTAINERS * * * * * */
+.mainContainer {
+  background-color: white;
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.ulContainer {
+  border-bottom: 3px solid var(--green);
+  list-style: none;
+  padding: 4px;
+}
+
+.inputContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+/* * * * * * INPUT CONTAINER * * * * * */
+
+.toDoLabel {
+  font-weight: 600;
+}
+.interactiveContainer {
+  margin-bottom: 20px;
+}
+.textInput {
+  margin-right: 10px;
+  padding: 2px 8px;
+
+  height: 30px;
+  border: 1px solid var(--green);
+}
+.inputBtn {
+  border: none;
+  padding: 2px 8px;
+  height: 30px;
+  border-radius: 10px;
+  color: var(--green);
+}
+.inputBtn:hover {
+  background-color: var(--green);
+  color: white;
+  cursor: pointer;
+}
+/* * * * * * LIST ITEM COMPONENT * * * * * */
+.listItem {
+  display: block;
+  width: 50%;
+  padding: 0 20px;
+  line-height: 30px;
+}
+.listItemInput {
+  margin-bottom: 15px;
+  margin-right: 10px;
+}
+.data-list-item-tex {
+  padding-right: 20px;
+}
+.listItemBtn {
+  background-color: white;
+  margin-left: 10px;
+  border: 1px dotted var(--green);
+  height: 30px;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+.listItemBtn:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+[data-list-item-checkbox]:checked ~ [data-list-item-tex] {
+  text-decoration: line-through;
+}
