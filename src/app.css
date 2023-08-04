@@ -69,21 +69,17 @@ body {
   margin-bottom: 15px;
   margin-right: 10px;
 }
-.data-list-item-tex {
+.data-list-item-text {
   padding-right: 20px;
 }
 .listItemBtn {
   background-color: white;
   margin-left: 10px;
-  border: 1px dotted var(--green);
-  height: 30px;
-  border-radius: 50%;
   height: 30px;
   width: 30px;
+  text-align: center;
 }
 .listItemBtn:hover {
-  background-color: black;
-  color: white;
   cursor: pointer;
 }
 [data-list-item-checkbox]:checked ~ [data-list-item-tex] {

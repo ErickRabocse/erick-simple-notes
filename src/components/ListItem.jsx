@@ -10,7 +10,7 @@ const ListItem = ({ item, id, handleClick }) => {
           name="toDoTask"
           data-list-item-checkbox
         />
-        <span data-list-item-tex>{item}</span>
+        <span data-list-item-text>{item}</span>
         <button className="listItemBtn" onClick={() => handleClick(id)}>
           ❌
         </button>
